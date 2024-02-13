@@ -1,14 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './core/header/header.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SidemenuComponent } from './core/sidemenu/sidemenu.component';
+import { RouterOutlet } from '@angular/router';
+import { LoaderComponent, MessageComponent } from '@app/shared/ui-messaging';
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'full-nx-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    LoaderComponent,
+    SidemenuComponent,
+    MatToolbarModule,
+    MatSidenavModule,
+    RouterOutlet,
+    MessageComponent,
+  ],
 })
-export class AppComponent {
-  title = 'eternal';
-}
+export class AppComponent {}

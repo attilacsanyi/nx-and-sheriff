@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@app/*": ["apps/eternal/src/app/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
