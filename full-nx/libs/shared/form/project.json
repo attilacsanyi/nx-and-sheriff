@@ -2,8 +2,8 @@
   "name": "shared-form",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/form/src",
-  "prefix": "full-nx",
-  "tags": [],
+  "prefix": "app",
+  "tags": ["shared"],
   "projectType": "library",
   "targets": {}
 }

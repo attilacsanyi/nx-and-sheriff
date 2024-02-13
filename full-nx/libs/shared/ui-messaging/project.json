@@ -2,8 +2,8 @@
   "name": "shared-ui-messaging",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/ui-messaging/src",
-  "prefix": "full-nx",
-  "tags": [],
+  "prefix": "app",
+  "tags": ["shared"],
   "projectType": "library",
   "targets": {}
 }

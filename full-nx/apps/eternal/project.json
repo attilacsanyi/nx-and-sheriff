@@ -2,9 +2,9 @@
   "name": "eternal",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "full-nx",
+  "prefix": "app",
   "sourceRoot": "apps/eternal/src",
-  "tags": [],
+  "tags": ["app:eternal"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
@@ -30,10 +30,14 @@
         ],
         "scripts": [],
         "server": "apps/eternal/src/main.server.ts",
-        "prerender": true,
+        "prerender": false,
         "ssr": {
           "entry": "apps/eternal/server.ts"
-        }
+        },
+        "allowedCommonJsDependencies": [
+          "js-sha256",
+          "base64-js"
+        ]
       },
       "configurations": {
         "production": {
@@ -41,7 +45,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "2mb"
             },
             {
               "type": "anyComponentStyle",

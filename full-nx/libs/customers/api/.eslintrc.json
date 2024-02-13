@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "full-nx",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]

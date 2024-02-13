@@ -2,8 +2,8 @@
   "name": "customers-data",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/customers/data/src",
-  "prefix": "full-nx",
-  "tags": [],
+  "prefix": "app",
+  "tags": ["domain:customers", "type:data"],
   "projectType": "library",
   "targets": {}
 }

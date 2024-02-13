@@ -8,7 +8,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { Configuration } from '@app/shared/config';
 import { MatButtonModule } from '@angular/material/button';
 import { isPlatformBrowser } from '@angular/common';
-import { SpecialGreetingComponent } from '@app/core/special-greeting.component';
+import { SpecialGreetingComponent } from './core/special-greeting.component';
 
 @Component({
   selector: 'app-home',

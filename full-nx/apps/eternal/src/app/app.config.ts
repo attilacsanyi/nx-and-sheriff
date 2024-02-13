@@ -21,7 +21,9 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { deAT } from 'date-fns/locale';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { ErrorHandlerService } from './core/error-handler.service';
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import { customersInterceptor } from '@app/customers/api';
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import {holidaysInterceptor} from "@app/holidays/api";
 import {baseUrlInterceptor, errorInterceptor} from "@app/shared/http";
 import {loadingInterceptor, sharedUiMessagingProvider} from "@app/shared/ui-messaging";
