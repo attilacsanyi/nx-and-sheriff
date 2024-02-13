@@ -1,7 +1,12 @@
 import { Component, inject, Signal } from '@angular/core';
+import {
+  CustomersComponent,
+  CustomersViewModel,
+} from '@app/customers/ui/customers/customers.component';
 import { createSelector, Store } from '@ngrx/store';
-import { CustomersComponent, CustomersViewModel } from '@app/customers/ui';
-import { customersActions, fromCustomers } from '@app/customers/data';
+import { fromCustomers } from '@app/customers/data/customers.selectors';
+import { customersActions } from '@app/customers/data/customers.actions';
+import { CustomersEffects } from '@app/customers/data/customers.effects';
 
 @Component({
   selector: 'app-customers-container',
@@ -13,6 +18,7 @@ import { customersActions, fromCustomers } from '@app/customers/data';
   ></app-customers>`,
   standalone: true,
   imports: [CustomersComponent],
+  providers: [CustomersEffects],
 })
 export class CustomersContainerComponent {
   #store = inject(Store);
