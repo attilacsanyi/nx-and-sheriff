@@ -19,7 +19,6 @@ import { RouterLinkWithHref } from '@angular/router';
 import { DatePipe, NgIf } from '@angular/common';
 import { Customer } from '@app/customers/model';
 import { Store } from '@ngrx/store';
-import { fromCustomers } from '@app/customers/data/customers.selectors';
 
 export interface CustomerWithSelected extends Customer {
   selected: boolean;
@@ -56,7 +55,6 @@ export class CustomersComponent {
   dataSource = new MatTableDataSource<CustomerWithSelected>([]);
 
   store = inject(Store);
-  customers = this.store.selectSignal(fromCustomers.selectPagedCustomers);
 
   constructor() {
     effect(() => (this.dataSource.data = this.viewModel().customers));
