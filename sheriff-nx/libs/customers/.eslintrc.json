@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "fullNx",
+            "prefix": "app",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "full-nx",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]
