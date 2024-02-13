@@ -1,1 +1,17 @@
-<sheriff-nx-nx-welcome></sheriff-nx-nx-welcome> <router-outlet></router-outlet>
+<div class="main flex">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="flex justify-between">
+      <app-header />
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-drawer-container autosize>
+    <mat-drawer mode="side" opened>
+      <app-sidemenu />
+    </mat-drawer>
+    <mat-drawer-content class="p-4">
+      <app-loader />
+      <app-message />
+      <router-outlet />
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

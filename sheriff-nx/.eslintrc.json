@@ -13,8 +13,36 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag":  "app:eternal",
+                "onlyDependOnLibsWithTags": ["type:api", "shared"]
+              },
+              {
+                "sourceTag": "domain:customers",
+                "onlyDependOnLibsWithTags": ["domain:customers", "shared"]
+              },
+              {
+                "sourceTag": "domain:holidays",
+                "onlyDependOnLibsWithTags": ["domain:holidays", "shared"]
+              },
+              {
+                "sourceTag": "shared",
+                "onlyDependOnLibsWithTags": ["shared"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:data", "type:model"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "type:data",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "type:model",
+                "onlyDependOnLibsWithTags": []
               }
             ]
           }

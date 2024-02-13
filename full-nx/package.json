@@ -51,6 +51,8 @@
     "@nx/web": "18.0.4",
     "@nx/workspace": "18.0.4",
     "@schematics/angular": "~17.1.0",
+    "@softarc/eslint-plugin-sheriff": "^0.14.3",
+    "@softarc/sheriff-core": "^0.14.3",
     "@swc-node/register": "~1.8.0",
     "@swc/core": "~1.3.85",
     "@swc/helpers": "~0.5.2",
