@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["apps/eternal/src/app/*"],
       "@app/customers/api": ["libs/customers/api/src/index.ts"],
       "@app/customers/data": ["libs/customers/data/src/index.ts"],
       "@app/customers/feat-main": ["libs/customers/feat-main/src/index.ts"],
