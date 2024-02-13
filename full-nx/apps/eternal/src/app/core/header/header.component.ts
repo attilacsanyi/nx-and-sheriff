@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
-import { SecurityStore } from '../../shared/security/security-store';
+import {SecurityStore} from "@app/shared/security";
 
 @Component({
   selector: 'app-header',

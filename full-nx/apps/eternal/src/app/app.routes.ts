@@ -1,10 +1,10 @@
 import { ActivatedRouteSnapshot, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { SecurityStore } from './shared/security/security-store';
 import { inject } from '@angular/core';
 import { filter } from 'rxjs/operators';
-import { Configuration } from './shared/config/configuration';
 import { toObservable } from '@angular/core/rxjs-interop';
+import { Configuration } from '@app/shared/config';
+import {SecurityStore} from "@app/shared/security";
 
 export const appRoutes: Routes = [
   {

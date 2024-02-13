@@ -1,0 +1,9 @@
+{
+  "name": "holidays-feat-quiz",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/holidays/feat-quiz/src",
+  "prefix": "full-nx",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

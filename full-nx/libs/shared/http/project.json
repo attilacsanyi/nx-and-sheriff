@@ -1,0 +1,9 @@
+{
+  "name": "shared-http",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/http/src",
+  "prefix": "full-nx",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
