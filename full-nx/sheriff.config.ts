@@ -2,7 +2,7 @@ import { noDependencies, sameTag, SheriffConfig } from '@softarc/sheriff-core';
 
 export const sheriffConfig: SheriffConfig = {
   tagging: {
-    'libs': {
+    libs: {
       'shared/<shared>/src': 'shared',
       '<domain>/feat-<name>/src': ['domain:<domain>', 'type:feature'],
       '<domain>/<type>/src': ['domain:<domain>', 'type:<type>'],
