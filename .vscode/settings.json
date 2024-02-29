@@ -1,0 +1,32 @@
+{
+  // Files
+  "files.exclude": {
+    "/**/.git": true,
+    "/**/.DS_Store": true,
+    ".history": true
+  },
+
+  // Search
+  "search.exclude": {
+    "/**/.vscode": true,
+    ".history": true,
+    "/**/.angular": true,
+    ".nx": true,
+    "/**/dist": true,
+    "/**/build": true,
+    "/**/node_modules": true,
+    "/**/*lock.*": true,
+    "/**/*.svg": true
+  },
+  // Typescript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Editor
+  "window.title": "${rootName}${separator}${activeEditorLong} ${dirty}",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "never"
+  },
+  "editor.formatOnSave": false,
+  "editor.foldingImportsByDefault": false
+}
